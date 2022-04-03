@@ -1,0 +1,268 @@
+#Http Request made to create a container
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "page_type": "p2",
+    "display_chat": true,
+    "requester": "331200"
+} 'https://api.botdoc.io/v1/module_container/container/'
+#HttpRequest made to create a Recipient
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "first_name": "Utsav",
+    "last_name": "Paul"
+} 'https://api.botdoc.io/v1/module_container/container/1493024/recipient/'
+#HttpRequest made to create Recipient Methods
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "interface_class": "email",
+    "value": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/recipient/1581304/recipient_item/'
+#HttpRequest made to define the a Email message
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "subject": "Test1",
+    "body": "this is a testing mail inside (set your messages)"
+}'https://api.botdoc.io/v1/module_container/container/1493024/email/'
+#HttpRequest made to create the the Auth Guard code
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "send_as": "sms",
+    "to": "+919167996688"
+} 'https://api.botdoc.io/v1/module_container/container/1493024/auth_code/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "Send Birth certificate",
+    "description": "Dear Student Send birth certificate",
+    "allowed_extensions": [
+        ".pdf",
+        ".jpeg"
+    ],
+    "max_files": 2,
+    "file_size_limit": 250,
+    "container": 1493024
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "passport doc",
+    "description": "request student to submit passport doc",
+    "allowed_extensions": [
+        ".pdf",
+        ".docx",
+        ".jpeg"
+    ],
+    "max_files": 1,
+    "file_size_limit": 500,
+    "container": 1493024
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+#Http Request made to create a container
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "page_type": "p2",
+    "display_chat": true,
+    "requester": "331200"
+} 'https://api.botdoc.io/v1/module_container/container/'
+#HttpRequest made to create a Recipient
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "first_name": "Utsav",
+    "last_name": "Paul"
+} 'https://api.botdoc.io/v1/module_container/container/1493027/recipient/'
+#HttpRequest made to create Recipient Methods
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "interface_class": "email",
+    "value": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/recipient/1581306/recipient_item/'
+#HttpRequest made to define the a Email message
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "subject": "Test2Emails",
+    "body": "this is the test2 email for verification"
+}'https://api.botdoc.io/v1/module_container/container/1493027/email/'
+#HttpRequest made to create the the Auth Guard code
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "send_as": "sms",
+    "to": "+9167996688"
+} 'https://api.botdoc.io/v1/module_container/container/1493027/auth_code/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "pull1test2",
+    "description": "send birthdoc",
+    "allowed_extensions": [
+        ".jpeg",
+        ".pdf"
+    ],
+    "max_files": 2,
+    "file_size_limit": 500,
+    "container": 1493027
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "test2pull2",
+    "description": "passport needed",
+    "allowed_extensions": [
+        ".jpeg",
+        ".pdf"
+    ],
+    "max_files": 2,
+    "file_size_limit": 500,
+    "container": 1493027
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+#HttpRequest made to send the container to the receivers
+curl --request GET --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' 'https://api.botdoc.io/v1/module_container/container/1493027/send_notification/'
+#Http Request made to create a container
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "page_type": "p2",
+    "display_chat": true,
+    "requester": "331200"
+} 'https://api.botdoc.io/v1/module_container/container/'
+#HttpRequest made to create a Recipient
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "first_name": "utsav",
+    "last_name": "paul"
+} 'https://api.botdoc.io/v1/module_container/container/1493030/recipient/'
+#HttpRequest made to create Recipient Methods
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "interface_class": "email",
+    "value": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/recipient/1581308/recipient_item/'
+#HttpRequest made to define the a Email message
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "subject": "this is setyourmessage",
+    "body": "body of setyourmessage"
+}'https://api.botdoc.io/v1/module_container/container/1493030/email/'
+#HttpRequest made to create the the Auth Guard code
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "send_as": "email",
+    "to": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/container/1493030/auth_code/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "firstpull",
+    "description": "birthdoc-firstpull",
+    "allowed_extensions": [
+        ".docx",
+        ".pdf"
+    ],
+    "max_files": 2,
+    "file_size_limit": 2500000,
+    "container": 1493030
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "pulltwo",
+    "description": "passport pull2",
+    "allowed_extensions": [
+        ".docx",
+        ".jpeg"
+    ],
+    "max_files": 3,
+    "file_size_limit": 250000,
+    "container": 1493030
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+#HttpRequest made to send the container to the receivers
+curl --request GET --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' 'https://api.botdoc.io/v1/module_container/container/1493030/send_notification/'
+#Http Request made to create a container
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "page_type": "p2",
+    "display_chat": true,
+    "requester": "331200"
+} 'https://api.botdoc.io/v1/module_container/container/'
+#HttpRequest made to create a Recipient
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "first_name": "Utsav",
+    "last_name": "Paul"
+} 'https://api.botdoc.io/v1/module_container/container/1493039/recipient/'
+#HttpRequest made to create Recipient Methods
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "interface_class": "email",
+    "value": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/recipient/1581317/recipient_item/'
+#HttpRequest made to define the a Email message
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "subject": "SetyourmessageSubjecthere",
+    "body": "body of setyourmessage blackbox"
+}'https://api.botdoc.io/v1/module_container/container/1493039/email/'
+#HttpRequest made to create the the Auth Guard code
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "send_as": "email",
+    "to": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/container/1493039/auth_code/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "pullreqbirth",
+    "description": "message area of pullrequest1 birthdoc",
+    "allowed_extensions": [
+        "docx",
+        "pdf"
+    ],
+    "max_files": 3,
+    "file_size_limit": 2500000,
+    "container": 1493039
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "sbjectpull2passport",
+    "description": "message area for pullrequest 2",
+    "allowed_extensions": [
+        "docx",
+        "jpg"
+    ],
+    "max_files": 2,
+    "file_size_limit": 2500000,
+    "container": 1493039
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+#HttpRequest made to send the container to the receivers
+curl --request GET --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' 'https://api.botdoc.io/v1/module_container/container/1493039/send_notification/'
+#Http Request made to create a container
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "page_type": "p2",
+    "display_chat": true,
+    "requester": "331200"
+} 'https://api.botdoc.io/v1/module_container/container/'
+#Http Request made to create a container
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "page_type": "p2",
+    "display_chat": true,
+    "requester": "331200"
+} 'https://api.botdoc.io/v1/module_container/container/'
+#HttpRequest made to create a Recipient
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "first_name": "utsav",
+    "last_name": "paul"
+} 'https://api.botdoc.io/v1/module_container/container/1493059/recipient/'
+#HttpRequest made to create Recipient Methods
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "interface_class": "email",
+    "value": "utsav.paul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/recipient/1581397/recipient_item/'
+#HttpRequest made to define the a Email message
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "subject": "Princeton College Document Upload",
+    "body": "Dear Students, We at Princeton College want to make our student's life easier and simpler ! We would like to ask you to upload all documents required to submit for the Leagality of Your status as a citizen of the country to help you avoid any legal hassel as you are an International Student\nThank You!"
+}'https://api.botdoc.io/v1/module_container/container/1493059/email/'
+#HttpRequest made to create the the Auth Guard code
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "send_as": "email",
+    "to": "utsav.apul99@gmail.com"
+} 'https://api.botdoc.io/v1/module_container/container/1493059/auth_code/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "Birth Certificate",
+    "description": "We need you to upload your birth certificate to determine your Nationality!",
+    "allowed_extensions": [
+        "docx",
+        "pdf"
+    ],
+    "max_files": 2,
+    "file_size_limit": 25000000,
+    "container": 1493059
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "Visa & Passport Images",
+    "description": "We need your Visa and Passport for authentication of your long term stay with us in the college dorm!",
+    "allowed_extensions": [
+        "docx",
+        "jpg",
+        "pdf"
+    ],
+    "max_files": 3,
+    "file_size_limit": 5000000,
+    "container": 1493059
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+curl --request POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' --data {
+    "title": "School Transcript ",
+    "description": "The Govt. would require your schooling certificates to approve your stay in the country so kindly oblige & upload!",
+    "allowed_extensions": [
+        "docx",
+        "jpg",
+        "pdf"
+    ],
+    "max_files": 4,
+    "file_size_limit": 75000000,
+    "container": 1493059
+}'https://api.botdoc.io/v1/module_container_pull/pull/'
+#HttpRequest made to send the container to the receivers
+curl --request GET --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: JWT <your_jwt_token>' 'https://api.botdoc.io/v1/module_container/container/1493059/send_notification/'
